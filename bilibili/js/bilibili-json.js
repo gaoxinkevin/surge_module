@@ -1,7 +1,7 @@
 const url = $request.url;
 const method = $request.method;
 const notifyTitle = "bilibili-json";
-console.log(`b站json-2023.03.24`);
+
 if (!$response.body) {
     // 有undefined的情况
     console.log(`$response.body为undefined:${url}`);
