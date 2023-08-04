@@ -1,0 +1,13 @@
+#!name=流媒体解锁检测
+#!desc=Netflix、Disney+、Youtube Premium解锁检测
+#!system=ios
+
+[Panel]
+nf_check = script-name=nf_check, title=Netflix 解锁检测, content="请刷新", update-interval=1800
+disney_check = script-name=disney_check,title=Disney+ 解锁检测,style=alert,content=请刷新,update-interval=1800
+youtube_premium_check = script-name=youtube_premium_check, title=YouTube Premium 解锁检测, update-interval=1800
+
+[Script]
+nf_check = type=generic, script-path=https://raw.githubusercontent.com/gaoxinkevin/surge_module/main/media_unlock_check/netflix/netflix_check.js
+disney_check = type=generic,script-path=https://raw.githubusercontent.com/gaoxinkevin/surge_module/main/media_unlock_check/disney/disney_check.js
+youtube_premium_check = type=generic, script-path=https://raw.githubusercontent.com/gaoxinkevin/surge_module/main/media_unlock_check/youtube/youtube_premium_check.js
