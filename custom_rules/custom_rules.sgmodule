@@ -1,0 +1,7 @@
+#!name=自定义规则
+#!desc=自定义规则，拦截广告
+
+[URL Rewrite]
+#微信小程序广告
+^https?:\/\/wxsnsdythumb.wxs.qq.com - reject
+
