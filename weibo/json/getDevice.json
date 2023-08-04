@@ -1,0 +1,61 @@
+{
+    "devices": [
+      {
+        "vip": "1",
+        "id": "7638",
+        "default": 1,
+        "name": "iPhone 14 Pro",
+        "pid": "1980"
+      },
+      {
+        "vip": "1",
+        "id": "7639",
+        "name": "iPhone 14 Pro(暗紫色)",
+        "pid": "1980"
+      },
+      {
+        "vip": "1",
+        "id": "7640",
+        "name": "iPhone 14 Pro(金色)",
+        "pid": "1980"
+      },
+      {
+        "vip": "1",
+        "id": "7641",
+        "name": "iPhone 14 Pro(银色)",
+        "pid": "1980"
+      },
+      {
+        "vip": "1",
+        "id": "7642",
+        "name": "iPhone 14 Pro(深空黑色)",
+        "pid": "1980"
+      },
+      {
+        "id": 1399,
+        "vip": 0,
+        "name": "iPhone客户端"
+      }
+    ],
+    "cards": [
+      {
+        "display_arrow": 0,
+        "actionlog": [
+        ],
+        "positive_scheme": "",
+        "readtimetype": "",
+        "is_asyn": 0,
+        "desc": "续费会员",
+        "title": "续费会员",
+        "card_type_name": "",
+        "card_type": 6,
+        "scheme": "sinaweibo:\/\/wbox?id=5cc40d2fb5fbd",
+        "itemid": "",
+        "highlight_state": "",
+        "section_id": "",
+        "multimedia_actionlog": [
+        ],
+        "show_type": 1
+      }
+    ]
+  }
