@@ -23,7 +23,7 @@ const mainConfig = storeMainConfig ? JSON.parse(storeMainConfig) : {
     removeLiveMedia: true, //首页顶部直播
     removeNextVideo: true, //关闭自动播放下一个视频
     removePinedTrending: true, //删除热搜列表置顶条目
-    removeInterestFriendInTopic: true, //超话：超话里的好友
+    removeInterestFriendInTopic: false, //超话：超话里的好友
     removeInterestTopic: true, //超话：可能感兴趣的超话 + 好友关注
     removeInterestUser: true, //用户页：可能感兴趣的人
 
