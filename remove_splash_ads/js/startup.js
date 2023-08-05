@@ -5,6 +5,7 @@ const $ = MagicJS(scriptName, "INFO");
     let response = null;
     if ($.isResponse) {
         switch (true) {
+
             // 美团外卖
             case /^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo?/.test($.request.url):
                 try {
@@ -40,6 +41,16 @@ const $ = MagicJS(scriptName, "INFO");
                     response = {body: JSON.stringify(obj)};
                 } catch (err) {
                     $.logger.error(`京东开屏去广告出现异常：${err}`);
+                }
+                break;
+            // 爱奇艺
+            case /^https?:\/\/\w*\.cupid\.iqiyi\.com\/mixer\?/.test($.request.url):
+                try {
+                    let obj = JSON.parse($.response.body);
+                    delete obj["adSlots"];
+                    response = { body: JSON.stringify(obj) };
+                } catch (err) {
+                    $.logger.error(`爱奇艺开屏去广告出现异常：${err}`);
                 }
                 break;
             default:

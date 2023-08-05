@@ -5,10 +5,15 @@
 [Script]
 美团外卖_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo?,script-path=https://github.com/gaoxinkevin/surge_module/blob/main/remove_splash_ads/js/startup.js
 京东_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start,script-path=https://github.com/gaoxinkevin/surge_module/blob/main/remove_splash_ads/js/startup.js
+爱奇艺_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(t7z|kjp)\.cupid\.iqiyi\.com\/mixer\?,script-path=https://github.com/gaoxinkevin/surge_module/blob/main/remove_splash_ads/js/startup.js
 
 [Rule]
 #联通开屏广告
 DOMAIN,m1.ad.10010.com,REJECT
+#腾讯视频开屏广告
+DOMAIN,pgdt.gtimg.cn,REJECT
+#芒果TV开屏广告
+DOMAIN,p1.meituan.net,REJECT
 
 [MITM]
 hostname = %APPEND% wmapi.meituan.com, api.m.jd.com
