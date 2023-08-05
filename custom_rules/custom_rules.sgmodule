@@ -3,6 +3,7 @@
 
 [URL Rewrite]
 #微信小程序广告
+^https?:\/\/wx.qlogo.cn - reject
 ^https?:\/\/wxsnsdythumb.wxs.qq.com - reject
 ^https?:\/\/wxsnsdy.wxs.qq.com - reject
 wxsnsdythumb.wxs.qq.com:443 - reject
