@@ -10,10 +10,6 @@
 [Rule]
 #联通开屏广告
 DOMAIN,m1.ad.10010.com,REJECT
-#腾讯视频开屏广告
-DOMAIN,pgdt.gtimg.cn,REJECT
-#芒果TV开屏广告
-DOMAIN,p1.meituan.net,REJECT
 
 [MITM]
 hostname = %APPEND% wmapi.meituan.com, api.m.jd.com
