@@ -78,4 +78,4 @@ URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 DOMAIN,optimus-ads.amap.com,REJECT
 
 [MITM]
-hostname = %APPEND% m.client.10010.com
+hostname = %APPEND% m.client.10010.com, mi.gdt.qq.com,act.vip.iqiyi.com, gw.alicdn.com, heic.alicdn.com,*.iqiyipic.com, *.iqiyi.com
