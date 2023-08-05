@@ -6,5 +6,9 @@
 美团外卖_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo?,script-path=https://github.com/gaoxinkevin/surge_module/blob/main/remove_splash_ads/js/startup.js
 京东_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start,script-path=https://github.com/gaoxinkevin/surge_module/blob/main/remove_splash_ads/js/startup.js
 
+[Rule]
+#联通开屏广告
+DOMAIN,m1.ad.10010.com,REJECT
+
 [MITM]
 hostname = %APPEND% wmapi.meituan.com, api.m.jd.com
