@@ -14,4 +14,4 @@
 Sub_info = script-name=Sub_info,update-interval=3600
 
 [Script]
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/gaoxinkevin/surge_module/main/sub_info/js/sub_info.js,script-update-interval=0,argument=url=httpurl&method=get&reset_day=1&title=title&icon=externaldrive.fill.badge.icloud=#007aff
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/gaoxinkevin/surge_module/main/sub_info/js/sub_info.js,script-update-interval=0,argument=url=httpurl&method=get&reset_day=1&title=title&icon=externaldrive.fill.badge.icloud&color=#007aff
