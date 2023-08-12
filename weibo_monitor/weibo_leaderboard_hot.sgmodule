@@ -1,0 +1,6 @@
+#!name=微博热搜热门监控
+#!desc=微博热门监控模块
+#!system=ios
+
+[Script]
+排行榜热门监控 = type=cron,cronexp=0 0 8-17/6 * * 2-6,wake-system=1,script-path=https://raw.githubusercontent.com/gaoxinkevin/surge_module/main/weibo_monitor/js/keyword_hot.js
