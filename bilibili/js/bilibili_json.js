@@ -56,6 +56,10 @@ if (!body.data) {
                     console.log('去除会员购');
                     return false;
                 }
+                else if (item.name === '双11') {
+                    console.log('去除双11');
+                    return false;
+                }
                 return true;
             });
             fixPos(body.data.bottom);
