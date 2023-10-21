@@ -6,8 +6,8 @@
 # https://github.com/app2smile/rules
 # Feature
 # 解除部分视频后台限制,开屏页广告,推荐页广告,动态(最常访问/推荐话题/列表广告),视频播放页面(up主推荐广告,相关推荐广告)
-B站净化 = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/gaoxinkevin/surge_module/main/bilibili/js/bilibili_json.js,script-update-interval=0
-bili-proto = type=http-response,pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.((view|viewunite)\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll|playurl\.v1\.PlayURL\/PlayView)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/gaoxinkevin/surge_module/main/bilibili/js/bilibili_proto.js,script-update-interval=0
+B站首页净化 = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/gaoxinkevin/surge_module/main/bilibili/js/bilibili_json.js,script-update-interval=0
+B站视频净化 = type=http-response,pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.((view|viewunite)\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll|playurl\.v1\.PlayURL\/PlayView)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/gaoxinkevin/surge_module/main/bilibili/js/bilibili_proto.js,script-update-interval=0
 
 [MITM]
 hostname = %APPEND% grpc.biliapi.net, app.bilibili.com
