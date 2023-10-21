@@ -49,6 +49,9 @@ if (!body.data) {
             $notification.post(notifyTitle, 'tab', "bottom字段错误");
         } else {
             body.data.bottom = body.data.bottom.filter(item => {
+                console.log('-----');
+                console.log(item.name);
+                console.log('-----');
                 if (item.name === '发布') {
                     console.log('去除发布');
                     return false;
