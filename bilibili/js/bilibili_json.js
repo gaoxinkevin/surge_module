@@ -69,7 +69,6 @@ if (!body.data) {
             console.log(`body:${$response.body}`);
             $notification.post(notifyTitle, '推荐页', "items字段错误");
         } else {
-            console.log(body.data.items);
             body.data.items = body.data.items.filter(i => {
                 const {card_type: cardType, card_goto: cardGoto} = i;
                 if (cardType && cardGoto) {
