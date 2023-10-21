@@ -7258,7 +7258,9 @@ let needProcessFlag = false;
 if (method !== "POST") {
     $notification.post(notifyTitle, "method错误:", method);
 }
-
+console.log('*****');
+console.log(url);
+console.log('*****');
 if (url.includes("Dynamic/DynAll")) {
     console.log('动态DynAll');
     const dynAllReplyType = biliRoot.lookupType("bilibili.app.dynamic.DynAllReply");
