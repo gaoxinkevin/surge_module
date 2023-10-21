@@ -8794,7 +8794,6 @@ const binaryBody = isQuanX ? new Uint8Array($response.bodyBytes) : $response.bod
 let gzipStrName = 'grpc-encoding';
 if (!headers[gzipStrName]) {
     // Loon QX做调整
-    console.log('响应头首字母大写');
     gzipStrName = 'Grpc-Encoding';
 }
 const isGzipCompress = headers[gzipStrName] === 'gzip';
@@ -8818,14 +8817,6 @@ if (url.includes("Dynamic/DynAll")) {
         needProcessFlag = true;
         dynAllReplyObj.topicList = null;
         console.log('推荐话题topicList去除');
-    }
-
-    if (!dynAllReplyObj.upList) {
-        console.log('upList为空');
-    } else {
-        needProcessFlag = true;
-        dynAllReplyObj.upList = null;
-        console.log('最常访问upList去除');
     }
 
     if (!dynAllReplyObj.dynamicList?.list?.length) {
@@ -8976,7 +8967,6 @@ if (url.includes("Dynamic/DynAll")) {
 }
 
 if (needProcessFlag) {
-    console.log(`${body.byteLength}---${body.buffer.byteLength}`);
     if (isQuanX) {
         $done({
             bodyBytes: body.buffer.slice(body.byteOffset, body.byteLength + body.byteOffset),
