@@ -29,7 +29,6 @@
     }
 
     function a(e) {
-        console.log(e.data.items)
         e.data.items = e.data.items.filter(t => !/banner|cm/.test(t.card_type)), n(e)
     }
 
