@@ -1,4 +1,4 @@
-console.log(`b站proto-2023.08.06`);
+// console.log(`b站proto-2023.08.06`);
 let protobuf;
 !function (g) {
     "use strict";
