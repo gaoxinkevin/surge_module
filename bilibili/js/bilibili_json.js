@@ -29,15 +29,13 @@ if (!body.data) {
         }
     } else if (url.includes("resource/show/tab/v2")) {
         console.log('tab修改');
+        console.log(body.data.top);
         // 顶部右上角
         if (!body.data.top) {
             console.log(`body:${$response.body}`);
             $notification.post(notifyTitle, 'tab', "top字段错误");
         } else {
             body.data.top = body.data.top.filter(item => {
-                console.log('*******');
-                console.log(item.name);
-                console.log('*******');
                 if (item.name === '游戏中心') {
                     console.log('去除右上角游戏中心');
                     return false;
