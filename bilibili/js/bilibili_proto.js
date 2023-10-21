@@ -7258,9 +7258,7 @@ let needProcessFlag = false;
 if (method !== "POST") {
     $notification.post(notifyTitle, "method错误:", method);
 }
-console.log('*****');
-console.log(url);
-console.log('*****');
+
 if (url.includes("Dynamic/DynAll")) {
     console.log('动态DynAll');
     const dynAllReplyType = biliRoot.lookupType("bilibili.app.dynamic.DynAllReply");
@@ -7318,12 +7316,8 @@ if (url.includes("Dynamic/DynAll")) {
     }
 } else if (url.includes("View/View")) {
     console.log('视频播放页View/View');
-    console.log(biliRoot);
-    console.log('*****************************************');
     const viewReplyType = biliRoot.lookupType("bilibili.app.view.ViewReply");
     let viewReplyObj = viewReplyType.decode(unGzipBody);
-    console.log(viewReplyObj);
-    console.log('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$');
     if (!viewReplyObj.cms?.length) {
         console.log('cms为空');
     } else {
