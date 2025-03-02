@@ -1,4 +1,5 @@
-#!name=百度网盘 解锁在线视频倍率/清晰度
+#!name=百度网盘解锁
+#!desc=百度网盘解锁在线视频倍率/清晰度
 #!system=ios
 #!repo=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
 
